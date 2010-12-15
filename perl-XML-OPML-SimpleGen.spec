@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Create OPML using XML::Simple
 License:    GPL+ or Artistic
@@ -15,6 +15,9 @@ BuildRequires: perl(Class::Accessor)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(XML::Simple)
 BuildRequires: perl(version)
+# These requires are not detected automatically.
+Requires: perl(Class::Accessor)
+Requires: perl(XML::Simple)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
