@@ -1,4 +1,5 @@
 removed_sources:
   XML-OPML-SimpleGen-0.04.tar.gz: e83767818720e103381f377c1510b14af29610a2
-sources:
   XML-OPML-SimpleGen-0.06.tar.gz: f6ea74f0c8595c642e690b634ecb741e32d47069
+sources:
+  XML-OPML-SimpleGen-0.07.tar.gz: a57a9f8702191664962b1d49790fe8d2268a6a16
