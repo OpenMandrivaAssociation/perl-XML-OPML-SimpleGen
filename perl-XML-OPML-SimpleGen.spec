@@ -1,14 +1,13 @@
 %define upstream_name    XML-OPML-SimpleGen
-%define upstream_version 0.07
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	0.07
+Release:	4
 
 Summary:	Create OPML using XML::Simple
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/XML/XML-OPML-SimpleGen-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/XML/XML-OPML-SimpleGen-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +28,7 @@ regards of generation. As this module uses XML::Simple it is rather
 generous in regards of attribute or element names.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
