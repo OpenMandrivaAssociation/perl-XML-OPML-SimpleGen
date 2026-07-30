@@ -1,13 +1,14 @@
 %define upstream_name    XML-OPML-SimpleGen
+%define upstream_version 0.07
 Name:		perl-%{upstream_name}
 Version:	0.07
-Release:	4
+Release:	1
 
 Summary:	Create OPML using XML::Simple
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/XML/XML-OPML-SimpleGen-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEPHENCA/XML-OPML-SimpleGen-0.07.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -44,19 +45,4 @@ make test
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.40.0-3mdv2011.0
-+ Revision: 656979
-- rebuild for updated spec-helper
-
-* Wed Dec 15 2010 Shlomi Fish <shlomif@mandriva.org> 0.40.0-2mdv2011.0
-+ Revision: 622190
-- Add Requires: that were not detected
-
-* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.40.0-1mdv2011.0
-+ Revision: 607885
-- import perl-XML-OPML-SimpleGen
-
-
 
