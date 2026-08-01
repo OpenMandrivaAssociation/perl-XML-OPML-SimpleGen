@@ -2,7 +2,7 @@
 %define upstream_version 0.07
 Name:		perl-%{upstream_name}
 Version:	0.07
-Release:	3
+Release:	4
 
 Summary:	Create OPML using XML::Simple
 License:	GPL+ or Artistic
